@@ -27,7 +27,19 @@ export default {
         return {
               categoriesNews : response.data
           }
-  }
+  },
+   head() {
+    return {
+      title: this.$route.params.category.toUpperCase(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'News portal for everyone'
+        }
+      ],
+   }
+  },
 }
 </script>
 

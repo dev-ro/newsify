@@ -25,9 +25,16 @@ export default {
       generalNews : response.data
     }
   },
-  header() {
+  head() {
     return {
-      title: 'NEWSIFY'
+      title: 'NEWSIFY',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'News portal for everyone'
+        }
+      ],
    }
   },
  

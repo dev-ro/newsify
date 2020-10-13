@@ -31,6 +31,18 @@ export default {
     created() {
         this.headingtitle = this.$route.params.country.toUpperCase()
     },
+    head() {
+    return {
+      title: 'Country: '+this.headingtitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'News portal for everyone'
+        }
+      ],
+   }
+  },
     async asyncData({params, $axios}) {
         const response = await $axios.get('https://newsapi.org/v2/top-headlines?country='+params.country)
         return {
