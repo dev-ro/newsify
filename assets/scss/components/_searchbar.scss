@@ -1,0 +1,10 @@
+.searchbox form input {
+    border: none;
+    background: none;
+    border-radius: 0;
+    &:focus {
+        background: none;
+        border-bottom: 1px solid;
+        box-shadow: none;
+    }
+}

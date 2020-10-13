@@ -1,0 +1,30 @@
+.newsTicker {
+    display: flex;
+    align-items: center;
+    .title {
+        background: $primary-color;
+        color: $white;
+        font-weight: 500;
+        padding:.6rem .8rem;
+        flex: none;
+    }
+
+    a {
+        font-weight: 500;
+        &:hover {
+            color: $primary-color !important;
+        }
+    }
+}
+
+
+@media (max-width:480px) {
+    .newsTicker {
+        align-items: flex-start;
+        flex-direction: column;
+        overflow: hidden;
+        .title {
+            padding: .4rem .6rem;
+        }
+    }
+}

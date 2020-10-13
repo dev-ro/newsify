@@ -1,0 +1,10 @@
+.ct-box a {
+    color: #000;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+@media ( max-width: 768px ) {
+    
+}
